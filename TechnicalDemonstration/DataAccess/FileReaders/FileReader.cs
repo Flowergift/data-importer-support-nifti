@@ -11,9 +11,12 @@ namespace Medica.Uk.TechnicalDemonstration.DataAccess.FileReaders
         public FileReader(string filePath)
         {
             FilePath = filePath;
-            var fileSize = new FileInfo(filePath).Length;
-            long availableMemory = GetAvailableMemory();
-            ChunkSize = CalculateChunkSize(ChunkSize, fileSize, availableMemory);
+            if (FileExists())
+            {
+                var fileSize = new FileInfo(FilePath).Length;
+                long availableMemory = GetAvailableMemory();
+                ChunkSize = CalculateChunkSize(ChunkSize, fileSize, availableMemory);
+            }
         }
 
         public abstract Stream ReadFile();

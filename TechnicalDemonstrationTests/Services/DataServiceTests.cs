@@ -11,14 +11,14 @@ namespace TechnicalDemonstrationTests.Services
         {
             // Arrange
             var dataService = new DataService();
-            var csvFilePath = "path/to/valid/data.csv";
+            var csvFilePath = "../../../TestData/validcsvdata.csv";
 
             // Act
             var dataModel = dataService.GetDataFromFile<CsvDataModel>(csvFilePath, FileFormat.CSV);
 
             // Assert
             Assert.That(dataModel, Is.Not.Null);
-            Assert.That(dataModel, Is.InstanceOf<CsvDataModel>());
+            Assert.That(dataModel, Is.InstanceOf<IEnumerable<CsvDataModel>>());
         }
 
         [Test]
@@ -26,14 +26,14 @@ namespace TechnicalDemonstrationTests.Services
         {
             // Arrange
             var dataService = new DataService();
-            var jsonFilePath = "path/to/valid/data.json";
+            var jsonFilePath = "../../../TestData/validjsondata.json";
 
             // Act
             var dataModel = dataService.GetDataFromFile<JsonDataModel>(jsonFilePath, FileFormat.JSON);
 
             // Assert
             Assert.That(dataModel, Is.Not.Null);
-            Assert.That(dataModel, Is.InstanceOf<JsonDataModel>());
+            Assert.That(dataModel, Is.InstanceOf<IEnumerable<JsonDataModel>>());
         }
 
         [Test]
@@ -41,7 +41,7 @@ namespace TechnicalDemonstrationTests.Services
         {
             // Arrange
             var dataService = new DataService();
-            var filePath = "path/to/file.txt";
+            var filePath = "../../../TestData/invalidcsvdata.csv";
 
             // Act & Assert
             Assert.Throws<ArgumentException>(() => dataService.GetDataFromFile<CsvDataModel>(filePath, (FileFormat)(-1)));
@@ -52,7 +52,7 @@ namespace TechnicalDemonstrationTests.Services
         {
             // Arrange
             var dataService = new DataService();
-            var nonExistentFilePath = "path/to/nonexistent/file.csv";
+            var nonExistentFilePath =  "../../../TestData/nonexistent.csv";
 
             // Act & Assert
             Assert.Throws<FileNotFoundException>(() => dataService.GetDataFromFile<CsvDataModel>(nonExistentFilePath, FileFormat.CSV));
