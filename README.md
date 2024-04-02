@@ -8,7 +8,6 @@ This solution demonstrates the implementation of data import from CSV and JSON f
 - Applies design patterns and principles (SOLID, etc.) to ensure code quality and maintainability
 - Provides comprehensive unit tests covering positive and negative scenarios
 - Adheres to clean, well-formatted, and well-named C# code
-- Includes documentation on the architecture, design decisions, and potential improvements
 
 ## Installation and Usage
 1. Clone or download this repository.
