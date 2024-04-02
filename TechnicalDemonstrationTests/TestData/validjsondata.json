@@ -1,0 +1,36 @@
+[
+    {
+      "Id": "1",
+      "PatientId": "P001",
+      "AppointmentID": "A001",
+      "Gender": "Male",
+      "ScheduledDay": "2023-11-20",
+      "AppointmentDay": "2023-11-20",
+      "Age": 30,
+      "Neighbourhood": "Central District",
+      "Scholarship": true,
+      "Hipertension": false,
+      "Diabetes": false,
+      "Alcoholism": false,
+      "Handcap": false,
+      "SMS_received": true,
+      "No_show": false
+    },
+    {
+      "Id": "2",
+      "PatientId": "P002",
+      "AppointmentID": "A002",
+      "Gender": "Female",
+      "ScheduledDay": "2023-11-21",
+      "AppointmentDay": "2023-11-21",
+      "Age": 25,
+      "Neighbourhood": "West End",
+      "Scholarship": false,
+      "Hipertension": true,
+      "Diabetes": false,
+      "Alcoholism": false,
+      "Handcap": false,
+      "SMS_received": false,
+      "No_show": true
+    }
+  ]

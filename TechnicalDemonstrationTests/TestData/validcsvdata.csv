@@ -1,0 +1,3 @@
+PatientId,Name,DateOfBirth,Gender,MedicalConditions,Medications,Allergies,LastAppointmentDate
+P001,"John Doe","1993-01-01",Male,"None","Aspirin","Peanuts","2023-10-25"
+P002,"Jane Smith","1998-05-15",Female,"Asthma","None","None","2023-10-20"

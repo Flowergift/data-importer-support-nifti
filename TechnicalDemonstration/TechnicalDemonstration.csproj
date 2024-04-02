@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>Medica.Uk.TechnicalDemonstration.Program</StartupObject>
+    <RootNamespace>Medica.Uk.$(MSBuildProjectName)</RootNamespace>
+    <AssemblyName>Medica.Uk.$(MSBuildProjectName)</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <FileVersion>0.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FileHelpers" Version="3.5.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.1-dev-00972" />
+    <PackageReference Include="System.Management.dll" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
