@@ -1,20 +1,30 @@
-This repository contains a solution for importing data from CSV and JSON files into in-memory data structures. It is a technical assessment for the System Support Developer position at Medica.
+# Technical Demonstration: Data Import from CSV and JSON Files
 
-The key requirements of the assessment are:
+## Overview
+This solution demonstrates the implementation of data import from CSV and JSON files into in-memory data structures. It follows best practices for software design, coding, testing, and documentation.
 
-- Implement data import from CSV and JSON files using libraries like FileHelpers and Newtonsoft.Json
-- Apply design patterns and principles (SOLID, etc.)
-- Write comprehensive unit tests covering positive and negative scenarios
-- Maintain clean, well-formatted, and well-named C# code
-- Provide documentation on the approach, design decisions, and potential improvements
+## Key Functionality
+- Imports data from CSV and JSON files using libraries like FileHelpers and Newtonsoft.Json
+- Applies design patterns and principles (SOLID, etc.) to ensure code quality and maintainability
+- Provides comprehensive unit tests covering positive and negative scenarios
+- Adheres to clean, well-formatted, and well-named C# code
+- Includes documentation on the architecture, design decisions, and potential improvements
 
-The solution is built using C# and .NET 6, and follows best practices for code organization, separation of concerns, and testability. It showcases the implementation of various design patterns and adheres to SOLID principles.
+## Installation and Usage
+1. Clone or download this repository.
+2. Open the solution in Visual Studio (2022 or later).
+3. Build the solution to compile the code.
+4. Run the TechnicalDemonstration project to execute the data import.
 
-The repository includes:
+## Test Data
+Test data files for CSV and JSON are included in the "TestData" folder. Update the file paths in the tests accordingly.
 
-- The Visual Studio solution with the data import implementation
-- Unit test projects with thorough test coverage
-- Documentation (diagrams, notes, etc.) detailing the architecture and design
-- Instructions for building, running, and testing the solution
+## Documentation
+Comprehensive documentation, including diagrams and notes on the architecture and design, is provided in the "Documentation" folder.
 
-This project demonstrates proficiency in software design, coding, testing, and documentation, as required for the System Support Developer role.
+## Feedback and Contributions
+Feedback and contributions are welcome. Please feel free to raise issues or pull requests on GitHub.
+
+## License
+This software is released under the unlicense.
+
