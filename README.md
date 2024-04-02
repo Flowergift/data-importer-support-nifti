@@ -3,6 +3,8 @@
 ## Overview
 This solution demonstrates the implementation of data import from CSV and JSON files into in-memory data structures. It follows best practices for software design, coding, testing, and documentation.
 
+The data-importer-main project is a .NET Core console application that is responsible for importing data from CSV and JSON files into in-memory data structures. The project follows a layered architecture.
+
 ## Key Functionality
 - Imports data from CSV and JSON files using libraries like FileHelpers and Newtonsoft.Json
 - Applies design patterns and principles (SOLID, etc.) to ensure code quality and maintainability
